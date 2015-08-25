@@ -3,7 +3,7 @@
  */
 
 import test from 'tape'
-import {{basename}} from '..'
+import {{basename}} from '../src'
 
 /**
  * Tests
