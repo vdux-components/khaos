@@ -14,7 +14,7 @@ node_modules: package.json
 	@touch node_modules
 
 test: node_modules
-	${BIN}/babel-node test/*.js
+	babel test/*.js
 
 validate: node_modules
 	@${BIN}/standard
@@ -23,7 +23,7 @@ clean:
 	@rm -rf lib
 
 build: clean
-	@${BIN}/babel src --out-dir lib
+	babel src --out-dir lib
 
 all: validate test
 
