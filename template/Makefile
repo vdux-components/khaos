@@ -17,7 +17,7 @@ test: node_modules
 	babel test/*.js
 
 validate: node_modules
-	@${BIN}/standard
+	@standard
 
 clean:
 	@rm -rf lib
