@@ -18,6 +18,14 @@ test: node_modules
 
 validate: node_modules
 	@standard
+	
+init:
+	@git init
+	@git add .
+	@git commit -am "initial"
+	@hub create vdux-components/{{basename}} -d "{{description}}"
+	@travis enable
+	@git push -u origin master
 
 clean:
 	@rm -rf lib
