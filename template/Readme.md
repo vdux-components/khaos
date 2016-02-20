@@ -7,7 +7,7 @@
 
 ## Installation
 
-    $ npm install @{{repository}}
+    $ npm install vdux-{{basename}}
 
 ## License
 

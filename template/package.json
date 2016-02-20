@@ -1,7 +1,7 @@
 {
-  "name": "@{{repository}}",
+  "name": "vdux-{{basename}}",
   "description": "{{description}}",
-  "repository": "git://github.com/{{repository}}.git",
+  "repository": "git://github.com/vdux-components/{{basename}}.git",
   "version": "0.1.0",{{#mit}}
   "license": "MIT",{{/mit}}
   "main": "lib/index.js",
