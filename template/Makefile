@@ -13,9 +13,13 @@ node_modules: package.json
 	@npm install
 	@touch node_modules
 
-test: node_modules
-	babel test/*.js
-
+test: $(src) $(tests)
+	@NODE_ENV=development hihat test/index.js -- \
+		--debug \
+		-t babelify \
+		-t envify \
+		-p tap-dev-tool
+		
 validate: node_modules
 	@standard
 	
