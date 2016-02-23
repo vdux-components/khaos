@@ -9,6 +9,6 @@ import {{basename}} from '../src'
  * Tests
  */
 
-test('should work', () => {
+test('should work', t => {
 
 })
