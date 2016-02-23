@@ -9,6 +9,12 @@
 
     $ npm install vdux-{{basename}}
 
+## Usage
+
+## API - props
+
+  * `prop` - 
+ 
 ## License
 
 MIT
