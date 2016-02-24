@@ -3,6 +3,8 @@
  */
 
 import test from 'tape'
+import vdux from 'vdux/dom'
+import element from 'vdux/element'
 import {{capital basename}} from '../src'
 
 /**
