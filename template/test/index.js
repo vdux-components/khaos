@@ -5,14 +5,14 @@
 import test from 'tape'
 import vdux from 'vdux/dom'
 import element from 'vdux/element'
-import {{capital basename}} from '../src'
+import {{capitalcase basename}} from '../src'
 
 /**
  * Tests
  */
 
 test('should work', t => {
-  const {stop} = run(() => <{{capital basename}}></{{capital basename}}>)
+  const {stop} = run(() => <{{capitalcase basename}}></{{capitalcase basename}}>)
   
   stop()
   t.end()
