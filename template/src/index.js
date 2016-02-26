@@ -5,7 +5,7 @@
 import element from 'vdux/element'
 
 /**
- * {{basename}}
+ * {{capitalcase basename}}
  */
 
 function render ({props, children}) {
