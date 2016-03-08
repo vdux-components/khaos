@@ -13,7 +13,7 @@ node_modules: package.json
 	@npm install
 	@touch node_modules
 
-test: $(src) $(tests)
+test: $(src) $(tests) node_modules
 	@NODE_ENV=development hihat test/index.js -- \
 		--debug \
 		-t babelify \
