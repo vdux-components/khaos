@@ -12,15 +12,22 @@ import {{capitalcase basename}} from '../src'
  */
 
 test('should work', t => {
-  const {stop} = run(() => <{{capitalcase basename}}></{{capitalcase basename}}>)
-  
-  stop()
+  let node
+
+  node = render(<{{capitalcase basename}}></{{capitalcase basename}}>)
+
   t.end()
 })
 
 /**
  * Helpers
  */
+
+function render (tree) {
+  const {stop} = run(() => tree)
+  stop()
+  return document.body.firstChild
+}
 
 function run (app, initialState = {}) {
   return vdux({
