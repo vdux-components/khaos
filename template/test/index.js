@@ -24,8 +24,7 @@ test('should work', t => {
  */
 
 function render (tree) {
-  const {stop} = run(() => tree)
-  stop()
+  run(() => tree).stop()
   return document.body.firstChild
 }
 
